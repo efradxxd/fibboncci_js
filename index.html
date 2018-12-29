@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset="UTF-8">    
+    <title>Serie Fibonacci   JS</title>
+    </head>
+
+    <body bgcolor="#0a0472"   text="#FFFFFF">
+
+
+    <script language=javascript>
+
+        var x = 1;
+        var y = 1;
+        var z;
+        document.write("<h3>");
+        var fin = prompt("Número de elementos a imprimir:");
+        document.write("La   Serie es:");
+        document.write("<br>");
+        document.write(1+": "+x   + "<br>");
+        document.write(2+": "+ y   + "<br>");
+        z = y + x;
+        document.write(3+": "+z   + "<br>");
+        for(var i = 3; i <= fin-1;   i++){
+            x = y;
+            y = z;
+            z = y + x;
+            w=i+1;
+            document.write(" "+w+": "+z +   "<br>");
+
+        }                                          
+    </script>
+
+
+    <a href="index.html"><font   color="red">Otra Vez</font></a>
+
+
+    </body>
+
+
+
+</html>
